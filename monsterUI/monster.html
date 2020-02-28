@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="keywords" content="keyword1,keyword2,keyword3">
+		<meta name="description" content="this is my page">
+		<meta name="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name='author' content="plum-blossom">
+		<link rel="stylesheet/less" type="text/css" href="reset.less" />
+		<link rel="stylesheet/less" type="text/css" href="monster-demo.less" />
+		<link rel="stylesheet/less" type="text/css" href="monster.less" />
+		<script src="config.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+		<script>
+			less.watch();
+		</script>
+		<title>monster主页</title>
+		<!-- lib -->
+		<!-- me css -->
+		<!-- me js -->
+	</head>
+	<body>
+		<div id="main">
+			<div class="header navbar">
+				<div class="navbar-container">
+					<div class="navbar-header">
+						<a href="#">MonsterUI</a>
+					</div>
+					<ul class="navbar-nav">
+						<li><a href="#">起步</a></li>
+						<li><a href="#">样式效果</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-container clearfix">
+				<div class="left-container fl">
+					<ul class="nav left-nav">
+						<li>
+							<a href="#font-style">文字</a>
+							<ul class="nav">
+								<li><a href="#font-color">颜色</a></li>
+								<li><a href="#font-size">大小</a></li>
+								<li><a href="#font-strong">强调</a></li>
+								<li><a href="#font-position">位置</a></li>
+								<li><a href="#fontover-style">文字超出显示</a></li>
+								<li><a href="#text-transform">文字大小写</a></li>
+								<li><a href="#text-ls">间距</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#border-style">边框</a>
+							<ul class="nav">
+								<li><a href="#border-color">颜色</a></li>
+								<li><a href="#border-width">宽度</a></li>
+								<li><a href="#border-type">样式</a></li>
+								<li><a href="#border-radius">圆角</a></li>
+							</ul>
+						</li>
+						<li><a href="#btn-style">按钮</a></li>
+						<li><a href="#img-style">图片</a></li>
+						<li><a href="#input-style">input</a></li>
+						<li><a href="#select-style">select</a></li>
+						<li><a href="#textarea-style">textarea</a></li>
+						<li><a href="#radio-style">单选</a></li>
+						<li><a href="#checkbox-style">多选</a></li>
+						<li><a href="#progress-style">进度条</a></li>
+						<li><a href="#table-style">进度条</a></li>
+						<li><a href="#nav-style">导航标签</a></li>
+						<li><a href="#paging-style">分页</a></li>
+						<li><a href="#modal-style">模态框</a></li>
+						<li><a href="#hr-style">hr</a></li>
+						<li><a href="#popover-style">弹出框</a></li>
+						<li><a href="#alert-style">警告框</a></li>
+						<li><a href="#collapse-style">collapse-崩塌</a></li>
+						<li><a href="#carousel-style">Carousel-轮播效果</a></li>
+					</ul>
+				</div>
+				<div class="right-container fl">
+					<div class="right-item">
+						<div class="">
+							<h1 id="font-style" class="title">文字</h1>
+							<p id="font-size">大小:引用为text-*</p>
+							<div class="bs-example">
+								<p>
+									<span class="text-min">文字-text-min</span>
+									<span class="text-xs">文字-text-xs</span>
+									<span class="text-sm">文字-text-sm</span>
+									<span class="text-nor">文字-text-nor</span>
+									<span class="text-lg">文字-text-lg</span>
+									<span class="text-hu">文字-text-hu</span>
+									<span class="text-max">文字-text-max</span>
+								</p>
+							</div>
+							<p id="font-color">颜色:引用为text-*</p>
+							<div class="bs-example">
+								<p>
+									<span class="text-default">文字-text-default</span>
+									<span class="text-success">文字-text-success</span>
+									<span class="text-wraning">文字-text-wraning</span>
+									<span class="text-error">文字-text-error</span>
+									<span class="text-info">文字-text-info</span>
+									<span class="text-white">文字-text-white</span>
+								</p>
+							</div>
+							<p id="font-strong">强调:引用为text-*</p>
+							<div class="bs-example">
+								<p>
+									<span class="headline">主标题-headline</span>
+									<span class="sub-headline">次标题-sub-headline</span>
+									<span class="subtitle">小标题-subtitle</span>
+									<span class="text">正文-text</span>
+									<span class="text-auxiliary">辅助文字-text-auxiliary</span>
+									<span class="text-iInvalid">失效文字-text-iInvalid</span>
+									<span class="text-link">链接文字-text-link</span>
+								</p>
+							</div>
+							<p id="font-position">显示位置:引用为text-*</p>
+							<div class="bs-example">
+								<p>
+									<span class="text-left">文字-text-left</span>
+									<span class="text-right">文字-text-right</span>
+									<span class="text-center">文字-text-center</span>
+								</p>
+							</div>
+							<p id="fontover-style">超出显示:引用为text-*</p>
+							<div class="bs-example">
+								<p class="text-nowrap">文字不换行-text-nowrap(使用要有宽度限制)</p>
+								<p class="text-ell" style="width:250px">文字超出省略号显示-text-ell文字文字</p>
+								<p class="text-ell2" style="width:250px">文字超出第二行省略号显示-text-ell2文字文字文字文字文字文字文字文字</p>
+							</div>
+							<p id="text-transform">大小写:引用为text-*</p>
+							<div class="bs-example">
+								<p>如下的class依次为.text-lowercase|.text-uppercase|.text-capitalize</p>
+								<p>
+									<span class="text-lowercase">字母小写abc</span>
+									<span class="text-uppercase">字母大写abc</span>
+									<span class="text-capitalize">首字母大写abc</span>
+								</p>
+							</div>
+							<p id="text-ls">间距:引用为text-*</p>
+							<div class="bs-example">
+								<p>如下的class依次为:.text-ls-xs|.text-ls-sm|.text-ls-nor|.text-ls-lg|.text-ls-hg</p>
+								<p>
+									<span class="text-ls-xs">文字</span>|
+									<span class="text-ls-sm">文字</span>|
+									<span class="text-ls-nor">文字</span>|
+									<span class="text-ls-lg">文字</span>|
+									<span class="text-ls-hg">文字</span>
+								</p>
+							</div>
+						</div>
+						<div class="">
+							<h1 id="border-style" class="title">边框</h1>
+							<p id="border-color">颜色:需要先有border再border-*,如：border border-info</p>
+							<div class="bs-example">
+								<p>
+									<span class="border">边框border</span>
+									<span class="border border-info">边框border border-info</span>
+									<span class="border border-success">边框border border-success</span>
+									<span class="border border-warning">边框border border-warning</span>
+									<span class="border border-error">边框border border-error</span>
+								</p>
+							</div>
+							<p id="border-width">宽度:需要先有border再border-*,如：border border-xs</p>
+							<div class="bs-example">
+								<p>
+									<span class="border">边框border</span>
+									<span class="border border-xs">边框border border-xs</span>
+									<span class="border border-sm">边框border border-sm</span>
+									<span class="border border-nor">边框border border-nor</span>
+									<span class="border border-lg">边框border border-lg</span>
+									<span class="border border-none">边框border border-none</span>
+									<span class="border border-nh">边框border border-nh</span>
+									<span class="border border-nv">边框border border-nv</span>
+								</p>
+							</div>
+							<p id="border-type">样式:需要先有border再border-*,如：border border-dashed</p>
+							<div class="bs-example">
+								<p>
+									<span class="border">边框border</span>
+									<span class="border border-dashed">边框border border-dashed</span>
+									<span class="border border-dotted">边框border border-dotted</span>
+									<span class="border border-double">边框border border-double</span>
+									<span class="border border-groove">边框border border-groove</span>
+								</p>
+							</div>
+							<p id="border-radius">圆角:需要先有border再border-*,如：border border-dashed</p>
+							<div class="bs-example">
+								<p>
+									<span class="border">边框border</span>
+									<span class="border border-radius-all">边框border border-radius-all</span>
+									<span class="border border-radius-half">边框border border-radius-half</span>
+									<span class="border border-radius-xs">边框border border-radius-xs</span>
+									<span class="border border-radius-sm">边框border border-radius-sm</span>
+									<span class="border border-radius-nor">边框border border-radius-nor</span>
+									<span class="border border-radius-lg">边框border border-radius-lg</span>
+									<span class="border border-radius-ten">边框border border-radius-ten</span>
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

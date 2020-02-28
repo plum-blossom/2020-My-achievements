@@ -1,0 +1,163 @@
+/**
+ *	Copyright (C)  Meleah 2019-
+ *	FileName : monster
+ * 	desc:monsterUI的样式表
+ *	History : 
+ *	版本号	作者			创建或修改日期	css
+ *	1.0		duxiaomei	2020-02-26		create
+ **/
+@charset "utf-8";
+html, body { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, 
+s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, 
+label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+ margin: 0; padding: 0; border: 0; font-weight: normal; 
+ font-style: normal; font-size: 100%; line-height: 1; font-family: inherit;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+a{color: #4a4a4a;text-decoration: none;}
+.img-circle {
+border-radius: 50%;
+}
+.fl{
+ float: left;
+}
+.fr{
+ float: right;
+}
+.clearfix{
+	zoom: 1;
+	 &:after{
+		display: table;
+		content: " ";
+		clear: both;
+	 }
+}
+.hide{
+	display: none!important;
+}
+.show{
+	display: block!important;
+}
+.inline{
+	display: inline-block;
+}
+@default-font-color:#4a4a4a;//文字默认颜色
+@default-hover:#1991FF;
+@default-active:#2585E6;
+@info:#1991FF;
+@info-hover:#5CADFF;
+@info-active:#2585E6;
+@success:#19be6b;
+@success-hover:#56C58D;
+@success-active:#16AD61;
+@warning:#FF9900;
+@warning-hover:#FFBB54;
+@warning-active:#ED8E00;
+@error:#FF4D50;
+@error-hover:#FE777B;
+@error-active:#EB4649;
+@nav-color:#343C4C;//导航色
+@title-color:#464C5B;//标题色
+@text-color:#4A4A4A;//正文色
+@other-color:#9B9B9B;//辅助/图标/输入框边框
+@disabled-color:#C5C8CE;//禁用文字/禁用边框/表单边框色
+@disabled-bgcolor:#F3F3F3;//禁用底色
+@border-color:#DDDEE2;//边框色
+@bg-color:#F8F8F9;//背景色/表格底色 
+#main{
+	background: #ffffff;
+	color: @default-font-color;
+}
+.navbar{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: @nav-color;
+	.navbar-container{
+		width: 90%;
+		margin:0 auto;
+		text-align: center;
+		.navbar-header{
+			display: inline-block;
+			a{
+				font-size: 18px;
+				font-weight: 500;
+				color: #ffffff;
+			}
+		}
+		.navbar-nav{
+			display: inline-block;
+			margin-left: 5%;
+			li{
+				padding:10px;
+				display: inline-block;
+				a{
+					color: #ffffff;
+				}
+				&:hover{
+					a{
+						color: @default-hover;
+					}
+				}
+				&.active{
+					a{color: @default-active;}
+				}
+			}
+		}
+	}
+}
+.main-container{
+	margin-top: 20px;
+	.title{
+		padding-bottom: 9px;
+		margin: 40px 0 20px;
+		border-bottom: 1px solid #eee;
+		font-size: 20px;
+	}
+	.bs-example{
+		background-color: @bg-color;
+		border: 1px solid #ddd;
+		border-radius: 4px 4px 0 0;
+		padding: 45px 15px 15px;
+		margin:15px;
+		position: relative;
+		&:before{
+			content: "实例:";
+			position: absolute;
+			top:15px;
+			left:15px;
+			font-size: 12px;
+			font-weight: 700;
+		}
+		p{
+			margin:5px;
+			line-height: 30px;
+			span{
+				display: inline-block;
+				padding:5px;
+				font-size: 12px;
+				margin:8px;
+			}
+		}
+	}
+	.left-container{
+		width: 20%;
+		padding-left: 20px;
+		.left-nav{
+			.nav{
+				li{
+					a{
+						margin-left: 30px;
+						padding-left: 20px;
+					}
+				}
+			}
+		}
+	}
+	.right-container{
+		width: calc(100% - 35%);
+	}
+}

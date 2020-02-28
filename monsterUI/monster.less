@@ -1,0 +1,320 @@
+/**
+ *	Copyright (C)  Meleah 2019-
+ *	FileName : monster
+ * 	desc:monsterUI的样式表
+ *	History : 
+ *	版本号	作者			创建或修改日期	css
+ *	1.0		duxiaomei	2020-02-26		create
+ **/
+@charset "utf-8";
+html, body { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, 
+s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, 
+label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+ margin: 0; padding: 0; border: 0; font-weight: normal; 
+ font-style: normal; font-size: 100%; line-height: 1; font-family: inherit;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+a{color: #4a4a4a;text-decoration: none;}
+.img-circle {
+border-radius: 50%;
+}
+.fl{
+ float: left;
+}
+.fr{
+ float: right;
+}
+.clearfix{
+	zoom: 1;
+	 &:after{
+		display: table;
+		content: " ";
+		clear: both;
+	 }
+}
+.hide{
+	display: none!important;
+}
+.show{
+	display: block!important;
+}
+.inline{
+	display: inline-block;
+}
+@default-font-color:#4a4a4a;//文字默认颜色
+@default-hover:#1991FF;
+@default-active:#2585E6;
+@info:#1991FF;
+@info-hover:#5CADFF;
+@info-active:#2585E6;
+@success:#19be6b;
+@success-hover:#56C58D;
+@success-active:#16AD61;
+@warning:#FF9900;
+@warning-hover:#FFBB54;
+@warning-active:#ED8E00;
+@error:#FF4D50;
+@error-hover:#FE777B;
+@error-active:#EB4649;
+@nav-color:#343C4C;//导航色
+@title-color:#464C5B;//标题色
+@text-color:#4A4A4A;//正文色
+@other-color:#9B9B9B;//辅助/图标/输入框边框
+@disabled-color:#C5C8CE;//禁用文字/禁用边框/表单边框色
+@disabled-bgcolor:#F3F3F3;//禁用底色
+@border-color:#DDDEE2;//边框色
+@bg-color:#F8F8F9;//背景色/表格底色 
+// 字体大小
+@text-min:12px;
+@text-xs:14px;
+@text-sm:16px;
+@text-nor:18px;
+@text-lg:20px;
+@text-hu:22px;
+@text-max:24px;
+/* 文字大小 */
+.text-min{
+	font-size: @text-min;
+}
+.text-xs{
+	font-size: @text-xs;
+}
+.text-sm{
+	font-size: @text-sm;
+}
+.text-nor{
+	font-size: @text-nor;
+}
+.text-lg{
+	font-size: @text-lg;
+}
+.text-hu{
+	font-size: @text-hu;
+}
+.text-max{
+	font-size: @text-max;
+}
+/* 文字颜色 */
+.text-default{
+	color: @default-font-color;
+}
+.text-success{
+	color: @success;
+}
+.text-wraning{
+	color: @warning;
+}
+.text-error{
+	color: @error;
+}
+.text-info{
+	color: @info;
+}
+.text-white{
+	color: #ffffff;
+}
+/* 文字位置及大小写 */
+.text-left {
+	text-align: left
+}
+
+.text-right {
+	text-align: right
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-nowrap {
+	white-space: nowrap
+}
+.text-ell{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.text-ell2{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+/* 文字间距 */
+.text-ls-xs{
+	letter-spacing: 2px;
+}
+.text-ls-sm{
+	letter-spacing: 4px;
+}
+.text-ls-nor{
+	letter-spacing: 6px;
+}
+.text-ls-lg{
+	letter-spacing: 8px;
+}
+.text-ls-hg{
+	letter-spacing: 10px;
+}
+/* 文字强调*/
+ /* 主标题*/
+ .headline{
+	 font-size:20px;
+	 font-family:MicrosoftYaHei-Bold,MicrosoftYaHei;
+	 font-weight:bold;
+	 color:rgba(70,76,91,1);
+ }
+/* 次标题 */
+ .sub-headline{
+	 font-size:18px;
+	 font-family:MicrosoftYaHei-Bold,MicrosoftYaHei;
+	 font-weight:bold;
+	 color:rgba(70,76,91,1);
+ }
+ /* 小标题*/
+ .subtitle{
+	 font-size:16px;
+	 font-family:MicrosoftYaHei-Bold,MicrosoftYaHei;
+	 font-weight:bold;
+	 color:rgba(70,76,91,1);
+ }
+/*  正文 */
+.text{
+	font-size:14px;
+	font-family:MicrosoftYaHei;
+	color: @default-font-color;
+}
+/* 辅助文字 */
+.text-auxiliary{
+	font-size:14px;
+	font-family:MicrosoftYaHei;
+	color:rgba(155,155,155,1);
+}
+/* 失效文字 */
+.text-iInvalid{
+	font-size:12px;
+	font-family:MicrosoftYaHei;
+	color:rgba(197,200,206,1);
+}
+/* 链接文字 */
+.text-link{
+	background-color: transparent;
+	color: @info;
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* 边框颜色 */
+.border{
+	border:1px solid @border-color;
+}
+.border-info{
+	border-color: @info!important;
+}
+.border-success{
+	border-color: @success!important;
+}
+.border-warning{
+	border-color: @warning!important;
+}
+.border-error{
+	border-color: @error!important;
+}
+/* 边框宽度 */
+.border-xs{
+	border-width: 1px!important;
+}
+.border-sm{
+	border-width: 2px!important;
+}
+.border-nor{
+	border-width: 3px!important;
+}
+.border-lg{
+	border-width: 4px!important;
+}
+.border-none{
+	border:none;
+}
+.border-nh{
+	border-left:none;
+	border-right:none;
+}
+.border-nv{
+	border-top:none;
+	border-bottom:none;
+}
+/* 边框圆角 */
+.border-radius-all{
+	border-radius: 50%!important;
+}
+.border-radius-half{
+	border-radius: 25%!important;
+}
+.border-radius-xs{
+	border-radius: 2px!important;
+}
+.border-radius-sm{
+	border-radius: 3px!important;
+}
+.border-radius-nor{
+	border-radius: 4px!important;
+}
+.border-radius-lg{
+	border-radius: 5px!important;
+}
+.border-radius-ten{
+	border-radius: 10%!important;
+}
+/* 边框样式 */
+.border-dashed{
+	border-style: dashed!important;
+}
+.border-dotted{
+	border-style: dotted!important;
+}
+.border-double{
+	border-style: double!important;
+}
+.border-groove{
+	border-style: groove!important;
+}
+// 导航标签
+.nav{
+	display: block;
+	li{
+		display: block;
+		margin:8px auto;
+		a{
+			padding-top: 1px;
+			padding-bottom: 1px;
+			padding-left: 30px;
+			font-size: 14px;
+			font-weight: 400;
+			&.active{
+				padding-left: 28px;
+				color: @default-active;
+			}
+			&:hover{
+				border-left:1px solid @default-active;
+				color: @default-active;
+			}
+		}
+		
+	}
+}
